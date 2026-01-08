@@ -4,13 +4,13 @@ import FormCard from "./FormCard";
 const FormsSection = () => {
   const googleForms = [
     {
-      title: "Event Registration",
+      title: "Converts Form 1",
       description: "Register your attendance for the LightUp Ede event. Secure your spot now!",
       link: "#google-form-1",
       icon: <UserPlus className="h-6 w-6" />,
     },
     {
-      title: "Volunteer Sign-up",
+      title: "Converts Form 2",
       description: "Join our team of dedicated volunteers and serve at the event.",
       link: "#google-form-2",
       icon: <Heart className="h-6 w-6" />,
@@ -25,13 +25,13 @@ const FormsSection = () => {
 
   const microsoftForms = [
     {
-      title: "Ministry Feedback",
+      title: "Converts Form 3",
       description: "Help us improve by sharing your experience and suggestions.",
       link: "#microsoft-form-1",
       icon: <FileText className="h-6 w-6" />,
     },
     {
-      title: "Group Registration",
+      title: "Converts Form 4",
       description: "Register as a group or church delegation for the event.",
       link: "#microsoft-form-2",
       icon: <Users className="h-6 w-6" />,
