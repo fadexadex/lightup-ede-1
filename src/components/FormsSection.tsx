@@ -4,14 +4,14 @@ import FormCard from "./FormCard";
 const FormsSection = () => {
   const googleForms = [
     {
-      title: "Event Registration",
-      description: "Register your attendance for the LightUp Ede event. Secure your spot now!",
+      title: "Converts Form 1",
+      description: "Record new convert details including name, contact, and decision date.",
       link: "#google-form-1",
       icon: <UserPlus className="h-6 w-6" />,
     },
     {
-      title: "Volunteer Sign-up",
-      description: "Join our team of dedicated volunteers and serve at the event.",
+      title: "Converts Form 2",
+      description: "Capture follow-up information and spiritual growth progress of converts.",
       link: "#google-form-2",
       icon: <Heart className="h-6 w-6" />,
     },
@@ -25,14 +25,14 @@ const FormsSection = () => {
 
   const microsoftForms = [
     {
-      title: "Ministry Feedback",
-      description: "Help us improve by sharing your experience and suggestions.",
+      title: "Converts Form 3",
+      description: "Document convert testimonies and salvation experiences.",
       link: "#microsoft-form-1",
       icon: <FileText className="h-6 w-6" />,
     },
     {
-      title: "Group Registration",
-      description: "Register as a group or church delegation for the event.",
+      title: "Converts Form 4",
+      description: "Track convert church placement and discipleship assignments.",
       link: "#microsoft-form-2",
       icon: <Users className="h-6 w-6" />,
     },
