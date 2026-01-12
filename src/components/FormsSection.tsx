@@ -21,6 +21,24 @@ const FormsSection = () => {
       link: "https://forms.gle/pS7j3aeDi39JQN9Z8",
       icon: <BookOpen className="h-6 w-6" />,
     },
+    {
+      title: "Converts Form 4",
+      description: "Record new convert details including name, contact, and decision date.",
+      link: "https://forms.gle/UtY7VxCUKuBi2gbc9",
+      icon: <UserPlus className="h-6 w-6" />,
+    },
+    {
+      title: "Converts Form 5",
+      description: "Record new convert details including name, contact, and decision date.",
+      link: "https://forms.gle/mUmMSogt1kjLZJH8A",
+      icon: <Heart className="h-6 w-6" />,
+    },
+    {
+      title: "Converts Form 6",
+      description: "Record new convert details including name, contact, and decision date.",
+      link: "https://forms.gle/kEnduaxDGsk7Xsbx5",
+      icon: <BookOpen className="h-6 w-6" />,
+    },
   ];
 
   return (
