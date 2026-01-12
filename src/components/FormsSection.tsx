@@ -16,7 +16,7 @@ const FormsSection = () => {
       icon: <Heart className="h-6 w-6" />,
     },
     {
-      title: "Prayer Request",
+      title: "Converts Form 3",
       description: "Record new convert details including name, contact, and decision date.",
       link: "#google-form-3",
       icon: <BookOpen className="h-6 w-6" />,
