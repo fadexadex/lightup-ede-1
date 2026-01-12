@@ -35,8 +35,7 @@ const FormsSection = () => {
             Data Collection <span className="gradient-text">Forms</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Complete the forms below to register, volunteer, or share your details with us. 
-            Your participation helps us serve you better.
+            Kindly use this form links to capture New Converts data. Thank you.
           </p>
         </div>
 
