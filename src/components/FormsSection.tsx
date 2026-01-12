@@ -1,4 +1,4 @@
-import { FileText, Users, ClipboardList, BookOpen, UserPlus, Heart } from "lucide-react";
+import { BookOpen, UserPlus, Heart } from "lucide-react";
 import FormCard from "./FormCard";
 
 const FormsSection = () => {
@@ -23,27 +23,6 @@ const FormsSection = () => {
     },
   ];
 
-  const microsoftForms = [
-    {
-      title: "Converts Form 3",
-      description: "Document convert testimonies and salvation experiences.",
-      link: "#microsoft-form-1",
-      icon: <FileText className="h-6 w-6" />,
-    },
-    {
-      title: "Converts Form 4",
-      description: "Track convert church placement and discipleship assignments.",
-      link: "#microsoft-form-2",
-      icon: <Users className="h-6 w-6" />,
-    },
-    {
-      title: "Testimony Submission",
-      description: "Share your testimony of God's goodness in your life.",
-      link: "#microsoft-form-3",
-      icon: <ClipboardList className="h-6 w-6" />,
-    },
-  ];
-
   return (
     <section className="relative px-4 py-20">
       {/* Section background glow */}
@@ -62,7 +41,7 @@ const FormsSection = () => {
         </div>
 
         {/* Google Forms */}
-        <div className="mb-16">
+        <div>
           <div className="mb-6 flex items-center gap-3">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
             <h3 className="font-display text-xl font-semibold text-primary">
@@ -80,30 +59,6 @@ const FormsSection = () => {
                 link={form.link}
                 icon={form.icon}
                 variant="google"
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Microsoft Forms */}
-        <div>
-          <div className="mb-6 flex items-center gap-3">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
-            <h3 className="font-display text-xl font-semibold text-accent">
-              Microsoft Forms
-            </h3>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
-          </div>
-          
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {microsoftForms.map((form, index) => (
-              <FormCard
-                key={index}
-                title={form.title}
-                description={form.description}
-                link={form.link}
-                icon={form.icon}
-                variant="microsoft"
               />
             ))}
           </div>
