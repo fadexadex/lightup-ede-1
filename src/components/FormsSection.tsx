@@ -6,13 +6,13 @@ const FormsSection = () => {
     {
       title: "Converts Form 1",
       description: "Record new convert details including name, contact, and decision date.",
-      link: "#google-form-1",
+      link: "https://forms.gle/y3KgJGpvs52x2doq9",
       icon: <UserPlus className="h-6 w-6" />,
     },
     {
       title: "Converts Form 2",
       description: "Record new convert details including name, contact, and decision date.",
-      link: "#google-form-2",
+      link: "https://forms.gle/6c2LasQbfkemGdYr8",
       icon: <Heart className="h-6 w-6" />,
     },
     {
