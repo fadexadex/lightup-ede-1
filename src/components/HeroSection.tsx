@@ -1,4 +1,5 @@
 import heroImage from "@/assets/lightup-ede-hero.jpg";
+import rccgLogo from "@/assets/rccg-logo.png";
 import { Calendar, MapPin } from "lucide-react";
 
 const HeroSection = () => {
@@ -19,6 +20,13 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-4 py-20 text-center">
+        {/* RCCG Logo */}
+        <img
+          src={rccgLogo}
+          alt="RCCG Logo"
+          className="mb-6 h-24 w-24 object-contain sm:h-28 sm:w-28"
+        />
+        
         <div className="animate-float">
           <h1 className="font-display text-5xl font-black uppercase tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
             <span className="block text-glow">Light Up</span>

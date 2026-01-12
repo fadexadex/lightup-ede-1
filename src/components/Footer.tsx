@@ -9,7 +9,7 @@ const Footer = () => {
           Arise and Shine • Isaiah 60:1
         </p>
         <p className="mt-4 text-xs text-muted-foreground">
-          © 2026 LightUp Ede. Redeemer's University. All rights reserved.
+          © 2026 Runtechspace. All Rights Reserved.
         </p>
       </div>
     </footer>
