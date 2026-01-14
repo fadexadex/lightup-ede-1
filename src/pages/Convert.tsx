@@ -51,10 +51,10 @@ const Convert = () => {
     };
 
     return (
-        <div className="h-screen relative flex items-center justify-center font-sans overflow-hidden">
+        <div className="min-h-screen relative flex items-center justify-center font-sans overflow-y-auto py-8">
             {/* Background Image */}
             <div
-                className="absolute inset-0 z-0"
+                className="absolute inset-0 z-0 h-full w-full fixed"
                 style={{
                     backgroundImage: `url(${PastoreAdeboyeImg})`,
                     backgroundSize: 'cover',
@@ -66,7 +66,7 @@ const Convert = () => {
             </div>
 
             {/* Main Card */}
-            <div className="relative z-10 w-full max-w-4xl bg-white shadow-2xl flex flex-col md:flex-row min-h-[500px] md:min-h-[550px] m-2 md:m-4">
+            <div className="relative z-10 w-full max-w-4xl bg-white shadow-2xl flex flex-col md:flex-row min-h-[500px] md:min-h-[550px] m-4">
 
                 {/* Left Side - Artistic Message */}
                 <div className="w-full md:w-1/2 bg-[#FFFDF5] relative overflow-hidden flex flex-col items-center justify-center p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-100">
@@ -79,7 +79,7 @@ const Convert = () => {
                         {/* More explicit cloud shapes can be added here or via an image if available */}
                     </div>
 
-                    <div className="relative z-10 text-center space-y-4 md:space-y-6 max-w-md mx-auto my-auto">
+                    <div className="relative z-10 text-center space-y-4 md:space-y-6 max-w-md mx-auto my-auto pb-32 md:pb-0">
                         <h1 className="text-3xl md:text-4xl lg:text-4xl font-extrabold tracking-in text-black leading-tight text-center font-handwriting" style={{ fontFamily: '"Comic Sans MS", "Chalkboard SE", sans-serif' }}>
                             THANK YOU FOR <br />
                             ACCEPTING JESUS <br />
@@ -91,7 +91,7 @@ const Convert = () => {
                     </div>
 
                     {/* Hills Illustration (CSS Approximation) */}
-                    <div className="absolute bottom-0 left-0 right-0 h-32 md:h-40 w-full z-0">
+                    <div className="absolute bottom-0 left-0 right-0 h-32 md:h-40 w-full z-0 pointer-events-none">
                         {/* Back hill */}
                         <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#8FA88F] rounded-t-[100%] transform scale-x-150 translate-y-8 border-t-2 border-black/80"></div>
                         {/* Front hill */}
