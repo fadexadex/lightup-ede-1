@@ -51,7 +51,7 @@ const Convert = () => {
     };
 
     return (
-        <div className="min-h-screen relative flex items-center justify-center font-sans overflow-y-auto py-8">
+        <div className="min-h-screen relative flex items-center justify-center font-sans overflow-y-auto py-8 px-4">
             {/* Background Image */}
             <div
                 className="absolute inset-0 z-0 h-full w-full fixed"
@@ -66,21 +66,20 @@ const Convert = () => {
             </div>
 
             {/* Main Card */}
-            <div className="relative z-10 w-full max-w-4xl bg-white shadow-2xl flex flex-col md:flex-row min-h-[500px] md:min-h-[550px] m-4">
+            <div className="relative z-10 w-full max-w-4xl bg-white shadow-3xl rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:min-h-[550px]">
 
                 {/* Left Side - Artistic Message */}
-                <div className="w-full md:w-1/2 bg-[#FFFDF5] relative overflow-hidden flex flex-col items-center justify-center p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-100">
+                <div className="w-full md:w-1/2 bg-[#FFFDF5] relative flex flex-col items-center justify-center p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-100 min-h-[320px] md:min-h-full">
 
                     {/* Clouds Illustration (CSS Approximation) */}
-                    <div className="absolute top-0 left-0 right-0 h-32 md:h-40">
+                    <div className="absolute top-0 left-0 right-0 h-32 md:h-40 pointer-events-none">
                         <svg viewBox="0 0 500 150" className="w-full h-full text-[#AABEC3] fill-current opacity-20 transform scale-150">
                             <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style={{ stroke: 'none', fill: '#9BB8C5' }}></path>
                         </svg>
-                        {/* More explicit cloud shapes can be added here or via an image if available */}
                     </div>
 
-                    <div className="relative z-10 text-center space-y-4 md:space-y-6 max-w-md mx-auto my-auto pb-32 md:pb-0">
-                        <h1 className="text-3xl md:text-4xl lg:text-4xl font-extrabold tracking-in text-black leading-tight text-center font-handwriting" style={{ fontFamily: '"Comic Sans MS", "Chalkboard SE", sans-serif' }}>
+                    <div className="relative z-10 text-center space-y-3 md:space-y-6 max-w-md mx-auto my-auto pb-24 md:pb-0 px-2">
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-black leading-snug md:leading-tight text-center font-handwriting" style={{ fontFamily: '"Comic Sans MS", "Chalkboard SE", sans-serif' }}>
                             THANK YOU FOR <br />
                             ACCEPTING JESUS <br />
                             AS YOUR LORD AND <br />
@@ -91,14 +90,14 @@ const Convert = () => {
                     </div>
 
                     {/* Hills Illustration (CSS Approximation) */}
-                    <div className="absolute bottom-0 left-0 right-0 h-32 md:h-40 w-full z-0 pointer-events-none">
+                    <div className="absolute bottom-0 left-0 right-0 h-24 md:h-40 w-full z-0 pointer-events-none overflow-hidden">
                         {/* Back hill */}
-                        <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#8FA88F] rounded-t-[100%] transform scale-x-150 translate-y-8 border-t-2 border-black/80"></div>
+                        <div className="absolute bottom-0 left-[-10%] right-[-10%] h-20 md:h-32 bg-[#8FA88F] rounded-t-[100%] transform scale-x-125 translate-y-4 border-t-2 border-black/80"></div>
                         {/* Front hill */}
-                        <div className="absolute bottom-0 left-[-20%] right-[-20%] h-16 bg-[#8FA88F] rounded-t-[100%] transform translate-y-3 border-t-2 border-black/80"></div>
+                        <div className="absolute bottom-0 left-[-20%] right-[-20%] h-14 md:h-20 bg-[#8FA88F] rounded-t-[100%] transform translate-y-2 border-t-2 border-black/80"></div>
 
                         {/* Dashes */}
-                        <div className="absolute bottom-6 left-1/4 flex space-x-1 text-black font-bold text-xl z-10 transform -rotate-6">
+                        <div className="absolute bottom-4 left-[20%] md:left-1/4 flex space-x-1 text-black/90 font-bold text-lg md:text-xl z-10 transform -rotate-3 text-shadow-sm">
                             <span>/</span><span>/</span><span>/</span><span>/</span>
                         </div>
                     </div>
@@ -106,25 +105,24 @@ const Convert = () => {
 
                 {/* Right Side - Form */}
                 <div className="w-full md:w-1/2 bg-white flex flex-col items-center justify-center p-6 md:p-10">
-                    <div className="w-full max-w-md">
+                    <div className="w-full max-w-md space-y-6">
                         {/* Logo */}
-                        <div className="flex justify-center mb-4">
-                            <div className="w-24 h-24 rounded-full flex items-center justify-center bg-white shadow-md overflow-hidden relative z-10">
-                                <img src={RccgLogo} alt="RCCG Logo" className="w-full h-full object-contain" />
+                        <div className="flex flex-col items-center">
+                            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center bg-white shadow-md overflow-hidden relative z-10 mb-4 transition-transform hover:scale-105 duration-300">
+                                <img src={RccgLogo} alt="RCCG Logo" className="w-full h-full object-contain p-1" />
                             </div>
+                            <h2 className="text-xl md:text-2xl font-bold text-center text-[#556075] uppercase tracking-wider font-sans">
+                                New Convert <br /> Form
+                            </h2>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-center text-[#7a8699] mb-6 uppercase tracking-wide font-sans mt-2">
-                            New Convert <br /> Form
-                        </h2>
-
-                        <form className="space-y-3" onSubmit={handleSubmit}>
+                        <form className="space-y-4" onSubmit={handleSubmit}>
                             <Input
                                 type="text"
                                 name="fullname"
                                 placeholder="Full Name"
                                 required
-                                className="h-12 border-gray-100 hover:border-gray-200 focus:border-gray-300 focus:ring-0 bg-white text-base text-gray-700 placeholder:text-gray-300 rounded-md shadow-sm"
+                                className="h-12 border-gray-200 hover:border-gray-300 focus:border-[#1e2080] focus:ring-1 focus:ring-[#1e2080]/20 bg-gray-50/50 text-base text-gray-800 placeholder:text-gray-400 rounded-lg shadow-sm transition-all"
                             />
 
                             <Input
@@ -132,7 +130,7 @@ const Convert = () => {
                                 name="phone_number"
                                 placeholder="Phone Number"
                                 required
-                                className="h-12 border-gray-100 hover:border-gray-200 focus:border-gray-300 focus:ring-0 bg-white text-base text-gray-700 placeholder:text-gray-300 rounded-md shadow-sm"
+                                className="h-12 border-gray-200 hover:border-gray-300 focus:border-[#1e2080] focus:ring-1 focus:ring-[#1e2080]/20 bg-gray-50/50 text-base text-gray-800 placeholder:text-gray-400 rounded-lg shadow-sm transition-all"
                             />
 
                             <Input
@@ -140,30 +138,30 @@ const Convert = () => {
                                 name="address"
                                 placeholder="Home Address"
                                 required
-                                className="h-12 border-gray-100 hover:border-gray-200 focus:border-gray-300 focus:ring-0 bg-white text-base text-gray-700 placeholder:text-gray-300 rounded-md shadow-sm"
+                                className="h-12 border-gray-200 hover:border-gray-300 focus:border-[#1e2080] focus:ring-1 focus:ring-[#1e2080]/20 bg-gray-50/50 text-base text-gray-800 placeholder:text-gray-400 rounded-lg shadow-sm transition-all"
                             />
 
                             <Input
                                 type="email"
                                 name="email"
                                 placeholder="Email Address"
-                                className="h-12 border-gray-100 hover:border-gray-200 focus:border-gray-300 focus:ring-0 bg-white text-base text-gray-700 placeholder:text-gray-300 rounded-md shadow-sm"
+                                className="h-12 border-gray-200 hover:border-gray-300 focus:border-[#1e2080] focus:ring-1 focus:ring-[#1e2080]/20 bg-gray-50/50 text-base text-gray-800 placeholder:text-gray-400 rounded-lg shadow-sm transition-all"
                             />
 
                             <Textarea
                                 name="prayer"
                                 placeholder="Prayer Points"
                                 required
-                                className="min-h-[80px] border-gray-100 hover:border-gray-200 focus:border-gray-300 focus:ring-0 bg-white text-base text-gray-700 placeholder:text-gray-300 rounded-md shadow-sm resize-none pt-3"
+                                className="min-h-[100px] border-gray-200 hover:border-gray-300 focus:border-[#1e2080] focus:ring-1 focus:ring-[#1e2080]/20 bg-gray-50/50 text-base text-gray-800 placeholder:text-gray-400 rounded-lg shadow-sm resize-none pt-3 transition-all"
                             />
 
                             <div className="pt-2">
                                 <Button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full h-12 bg-[#1e2080] hover:bg-[#151655] text-white font-semibold text-lg rounded-md shadow-md transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                                    className="w-full h-12 bg-[#1e2080] hover:bg-[#151655] active:scale-[0.98] text-white font-bold text-lg rounded-lg shadow-lg hover:shadow-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
                                 >
-                                    {isSubmitting ? "Submitting..." : "Submit"}
+                                    {isSubmitting ? "Submitting..." : "Submit Form"}
                                 </Button>
                             </div>
                         </form>
